@@ -1,7 +1,6 @@
 {
     "name": "league/html-to-markdown",
     "type": "library",
-    "version": "1.1.1",
     "description": "An HTML-to-markdown conversion helper for PHP",
     "keywords": ["markdown", "html"],
     "homepage": "https://github.com/thephpleague/html-to-markdown",
