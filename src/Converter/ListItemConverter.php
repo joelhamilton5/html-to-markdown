@@ -40,7 +40,8 @@ class ListItemConverter implements ConverterInterface, ConfigurationAwareInterfa
         $level = $element->getListItemLevel($element);
 
         $prefixForParagraph = str_repeat('  ', $level + 1);
-        $value = trim(implode("\n" . $prefixForParagraph, explode("\n", trim($element->getValue()))));
+        $value = implode("\n" . $prefixForParagraph, explode("\n", trim($element->getValue())));
+//        $value = trim(implode("\n" . $prefixForParagraph, explode("\n", trim($element->getValue()))));
 
         // If list item is the first in a nested list, add a newline before it
         $prefix = '';

@@ -18,7 +18,7 @@ class BlockquoteConverter implements ConverterInterface
 
         $markdown = '';
 
-        $quote_content = trim($element->getValue());
+        $quote_content = $element->getValue();
 
         $lines = preg_split('/\r\n|\r|\n/', $quote_content);
 

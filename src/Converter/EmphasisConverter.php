@@ -41,6 +41,8 @@ class EmphasisConverter implements ConverterInterface, ConfigurationAwareInterfa
             $style = $this->config->getOption('bold_style');
         }
 
+        return $style . trim($value) . $style;
+
         $prefix = ltrim($value) !== $value ? ' ' : '';
         $suffix = rtrim($value) !== $value ? ' ' : '';
 
